@@ -1,0 +1,89 @@
+.history-container {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.history-header h2 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.delete-all-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-item {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.location-info h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.location-info p {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.location-info small {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 68, 68, 0.1);
+}
+
+.no-history {
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-top: 40px;
+}

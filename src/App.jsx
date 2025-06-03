@@ -91,6 +91,9 @@ function App() {
     <div className="app">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
       <main className="main-content">
+        <div className="app-header">
+          <h1 className="app-title">WeatherSnap</h1>
+        </div>
         <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
         {activeTab === 'weather' ? (
           <Weather 

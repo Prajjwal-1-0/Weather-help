@@ -1,8 +1,11 @@
 .calendar-container {
   padding: 20px;
-  height: 100%;
+  height: calc(100vh - 80px); /* Adjust for header */
   overflow-y: auto;
   color: var(--text-color);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .calendar-container h2 {

@@ -33,6 +33,35 @@ body {
   color: var(--text-color);
 }
 
+.app-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px; /* Width of sidebar */
+  height: 60px;
+  background: var(--card-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  background: linear-gradient(45deg,#2f4680,#500ae4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .main-content {
   flex: 1;
   display: flex;
@@ -40,14 +69,5 @@ body {
   position: relative;
   overflow: hidden;
   align-items: center;
-  padding: 20px;
-}
-
-.main-content {
-  flex: 1;
-  padding: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 80px 20px 20px; /* Increased top padding to account for fixed header */
 }

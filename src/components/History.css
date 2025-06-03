@@ -1,7 +1,10 @@
 .history-container {
   padding: 20px;
-  height: 100%;
+  height: calc(100vh - 80px); /* Adjust for header */
   overflow-y: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .history-header {
